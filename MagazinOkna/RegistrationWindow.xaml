@@ -1,0 +1,29 @@
+﻿<Window x:Class="MagazinOkna.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Регистрация"
+        Height="300"
+        Width="300">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Имя:"
+                       Margin="5" />
+            <TextBox x:Name="NameTextBox"
+                     Margin="5" />
+            <TextBlock Text="Фамилия:"
+                       Margin="5" />
+            <TextBox x:Name="SurnameTextBox"
+                     Margin="5" />
+            <TextBlock Text="Роль (User/Admin):"
+                       Margin="5" />
+            <TextBox x:Name="RoleTextBox"
+                     Margin="5" />
+            <Button Content="Регистрация"
+                    Click="RegisterButton_Click"
+                    Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,85 @@
+﻿<Window x:Class="MagazinOkna.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MagazinOkna"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/images.png" />
+        </Grid.Background>
+        <TextBox x:Name="Name"
+                 HorizontalAlignment="Center"
+                 Margin="0,147,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="246"
+                 Height="23" />
+        <Button x:Name="login"
+                Content="Войти"
+                HorizontalAlignment="Center"
+                Margin="0,250,0,0"
+                VerticalAlignment="Top"
+                Click="Button_Click"
+                Width="208"
+                Height="32"
+                FontFamily="Bahnschrift Condensed"
+                FontSize="18" />
+        <TextBox x:Name="Surname"
+                 HorizontalAlignment="Center"
+                 Margin="0,194,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="246"
+                 RenderTransformOrigin="0.5,0.5"
+                 Height="23">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Center"
+                   Height="89"
+                   Margin="0,10,0,0"
+                   TextWrapping="Wrap"
+                   Text="Заполните форму"
+                   VerticalAlignment="Top"
+                   Width="742"
+                   Foreground="White"
+                   FontSize="72"
+                   FontFamily="Bahnschrift Condensed"
+                   TextAlignment="Center" />
+        <TextBlock HorizontalAlignment="Left"
+                   Height="20"
+                   Margin="330,225,0,0"
+                   TextWrapping="Wrap"
+                   Text="Нет аккаунта ?"
+                   VerticalAlignment="Top"
+                   Width="90"
+                   Foreground="White"
+                   FontFamily="Bahnschrift Condensed"
+                   FontSize="16"
+                   TextAlignment="Center" />
+        <Button x:Name="Regestration"
+                Content="Создать"
+                HorizontalAlignment="Left"
+                Height="20"
+                Margin="420,225,0,0"
+                VerticalAlignment="Top"
+                Width="48"
+                FontFamily="Bahnschrift SemiBold"
+                FontSize="11"
+                Click="RegBtn_Click"
+                BorderBrush="{x:Null}"
+                Background="{x:Null}"
+                Foreground="White" />
+    </Grid>
+</Window>
